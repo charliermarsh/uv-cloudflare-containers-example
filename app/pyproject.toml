@@ -3,7 +3,7 @@ name = "app"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.115.13",
+    "fastapi[standard]>=0.115.13",
     "httptools>=0.6.4",
     "uvicorn>=0.34.3",
     "uvloop>=0.21.0",
