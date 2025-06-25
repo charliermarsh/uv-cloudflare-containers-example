@@ -8,7 +8,10 @@ export class Backend extends Container {
 }
 
 export default {
-  async fetch(request: Request, env: { BACKEND: DurableObjectNamespace<Backend> }): Promise<Response> {
+  async fetch(
+    request: Request,
+    env: { BACKEND: DurableObjectNamespace<Backend> },
+  ): Promise<Response> {
     const containerInstance = await getRandom(env.BACKEND, INSTANCE_COUNT);
     return containerInstance.fetch(request);
   },

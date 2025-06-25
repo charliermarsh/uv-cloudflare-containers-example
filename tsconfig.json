@@ -15,9 +15,9 @@
     "moduleResolution": "Bundler",
     /* Specify type package names to be included without being referenced in a source file. */
     "types": [
-        "./worker-configuration.d.ts",
-        "./worker-configuration.d.ts",
-        "node"
+      "./worker-configuration.d.ts",
+      "./worker-configuration.d.ts",
+      "node"
     ],
     /* Enable importing .json files */
     "resolveJsonModule": true,
